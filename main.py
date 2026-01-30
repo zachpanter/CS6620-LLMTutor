@@ -2,7 +2,7 @@ import ollama
 import time
 
 questions = [
-    "What is the 'Dichotomy of Control,' and how can it be applied to a stressful situation at work?",
+    "What is the 'Dichotomy of Control'?",
     "How did Marcus Aurelius view the concept of the 'Obstacle is the Way' in his Meditations?",
     "Explain the difference between 'Preferred Indifferents' and 'Dispreferred Indifferents.'",
     "How does a Stoic distinguish between their own character and external reputation?",
@@ -44,7 +44,7 @@ def ask_marcus(question):
         end_time = time.time()
 
         feedback = response['message']['content']
-        print(f"\n[Sage's Guidance]:\n{feedback}")
+        print(f"\nSage's Guidance:\n{feedback}")
 
         duration = end_time - start_time
         print(f"\n(Response took: {duration:.2f} seconds)")
