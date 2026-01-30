@@ -18,7 +18,7 @@ def ask_marcus(question):
         start_time = time.time()
 
         response = ollama.chat(
-            model="deepseek-r1:8b",
+            model="gemma3:12b",
             messages=[
                 {
                     "role": "system",
