@@ -18,7 +18,7 @@ def ask_marcus(question):
         start_time = time.time()
 
         response = ollama.chat(
-            model="gemma3:12b",
+            model="qwen3:14b",
             messages=[
                 {
                     "role": "system",
@@ -45,7 +45,7 @@ def ask_marcus(question):
         end_time = time.time()
 
         feedback = response['message']['content']
-        print(f"\nSage's Guidance:\n{feedback}")
+        print(f"\nSage's Feedback:\n{feedback}")
 
         duration = end_time - start_time
         print(f"\n(Response took: {duration:.2f} seconds)")
