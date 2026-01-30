@@ -11,7 +11,7 @@ questions = [
 
 def ask_marcus(question):
     is_correct = False
-    print(f"\n # NEW QUESTION\n{question}")
+    print(f"\n ### NEW QUESTION\n{question}")
 
     while not is_correct:
         student_response = input("\n $: ")
@@ -26,8 +26,9 @@ def ask_marcus(question):
                         "You are a Stoic philosophy tutor specializing in the Socratic method. "
                         "Evaluate the student's understanding of Stoic principles based on their response. "
                         "If the student is wrong, explain the Stoic logic and ask them to try again. "
-                        "Start your response with 'CORRECT' if the student demonstrates clear understanding, "
-                        "otherwise start with 'INCORRECT'."
+                        "Start your response with 'CORRECT' if the student demonstrates clear understanding. "
+                        "Start your response with  'GUIDANCE' is the student asks for help or specifically notes they are unfamiliar with a topic, notes they are confused or says they don't know. "
+                        "If the response is neither 'CORRECT' nor 'GUIDANCE', start with 'INCORRECT'."
                     )
                 },
                 {
